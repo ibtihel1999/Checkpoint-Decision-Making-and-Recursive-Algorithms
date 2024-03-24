@@ -84,7 +84,10 @@ function power(base, exponent) {
     }
 }
 
+
 let base = 2;
 let exponent = 3;
 let result = power(base, exponent);
 console.log(`${base} raised to the power of ${exponent} is: ${result}`);
+
+
