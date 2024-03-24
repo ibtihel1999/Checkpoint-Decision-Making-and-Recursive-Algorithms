@@ -55,3 +55,36 @@ function main() {
 main();
 
 
+function clothingAdviser(temperature, isRaining) {
+
+        if (isRaining) {
+            console.log("It's  raining. You should wear a warm coat, hat, and boots.");
+        } else {
+            console.log("It's  not raining. Wear a heavy coat, scarf, and gloves.");
+        }
+    }
+
+
+function main() {
+    
+    let rainInput = prompt("Is it raining? (yes/no):");
+    let isRaining = rainInput.toLowerCase() === "yes";
+    
+    clothingAdviser(isRaining);
+}
+
+main();
+
+function power(base, exponent) {
+    if (exponent === 0) {
+        return 1;
+    }
+    else {
+        return base * power(base, exponent - 1);
+    }
+}
+
+let base = 2;
+let exponent = 3;
+let result = power(base, exponent);
+console.log(`${base} raised to the power of ${exponent} is: ${result}`);
